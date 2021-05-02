@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package importA;
+
+// I want this file only for public imports. Without any messages.
+import public "importB.proto";
+
+// Comment this to get an ERROR
+//message MessageA {
+//}

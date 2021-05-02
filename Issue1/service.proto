@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package service;
+
+import "importA.proto";
+
+service ServiceA {
+    rpc MethodA(RequestA) returns (ResponseA); 
+}
+
+message RequestA {
+    importB.MessageB m = 1;
+}
+
+message ResponseA {
+}
