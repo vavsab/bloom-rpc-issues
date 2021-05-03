@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package org.api.merge;
+
+// As soon as you uncomment this import - BloomRPC cannot find MergeService.
+//import "org/merge/rules.proto";
+
+service MergeService {
+    rpc Merge(MergeRequest) returns (MergeResponse); 
+}
+
+message MergeRequest {
+}
+
+message MergeResponse {
+}
