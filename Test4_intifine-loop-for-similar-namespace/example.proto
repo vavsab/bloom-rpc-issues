@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+// Example from this fix https://github.com/uw-labs/bloomrpc-mock/pull/11
+package foo.bar.foo.bar.foo.foo.bar;
+
+service foo {
+    rpc Hello(A) returns (B);
+}
+
+message A {
+}
+
+message B {
+}

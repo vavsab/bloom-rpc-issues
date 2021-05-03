@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+service Foo {
+    rpc Foo(RequestFoo) returns (ResponseFoo);
+}
+
+message RequestFoo {
+}
+
+message ResponseFoo {
+}

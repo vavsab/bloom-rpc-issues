@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package foo;
+
+service Foo {
+    rpc Foo(RequestFoo) returns (ResponseFoo);
+}
+
+message RequestFoo {
+    message SubRequestFoo {
+        message SubSubRequestFoo {
+            message SubSubSubRequestFoo {
+                int32 some_field = 1;
+            }
+    
+            SubSubSubRequestFoo sub = 1;    
+        }
+
+        SubSubRequestFoo sub = 1;
+    }
+
+    SubRequestFoo sub = 1;
+}
+
+message ResponseFoo {
+}
